@@ -5,17 +5,18 @@ Dependent Variable: time taken
 
 Outline:
 
--Have 3 sets of tests, for data set of sizes 10, 100, 1000. (10 will 
-be michael 100 will be salaj and 1000 will be ariel). 
+-Have 3 sets of tests, for data set of sizes 10, 1000, 10000. (10 will
+be michael 1000 will be salaj and 10000 will be ariel).
 
 -For each set of testing, we will do 10* trials. We will do this by using
 2 nested for loops, one for each trial, one to generate the new data set
-for each trial (each data set is an ordered array list filled with randomly
-generated numbers)
+for each trial (each data set is filled with sequential numbers (1 tru size of data set)
 
 -Each trial will have the following structure:
 
  //Generate Data set
+
+ //Select number to be searched for
 
  //Find start time for binary test
 
@@ -32,5 +33,5 @@ generated numbers)
  //find time difference for both and add it to an array that is composed
  //of data from each trial in a set
 
--Then we will find the average for each set for both binary and linear. 
+-Then we will find the average for each set for both binary and linear.
 And then analyze the results.
