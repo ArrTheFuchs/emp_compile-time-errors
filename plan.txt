@@ -1,0 +1,36 @@
+**The** Plan:
+
+Independent Variable: dataset size
+Dependent Variable: time taken
+
+Outline:
+
+-Have 3 sets of tests, for data set of sizes 10, 100, 1000. (10 will 
+be michael 100 will be salaj and 1000 will be ariel). 
+
+-For each set of testing, we will do 10* trials. We will do this by using
+2 nested for loops, one for each trial, one to generate the new data set
+for each trial (each data set is an ordered array list filled with randomly
+generated numbers)
+
+-Each trial will have the following structure:
+
+ //Generate Data set
+
+ //Find start time for binary test
+
+ //Do binary test
+
+ //Find end time for binary test
+
+ //Find start time for linear test
+
+ //Do linear test
+
+ //Find end time for linear test
+
+ //find time difference for both and add it to an array that is composed
+ //of data from each trial in a set
+
+-Then we will find the average for each set for both binary and linear. 
+And then analyze the results.
