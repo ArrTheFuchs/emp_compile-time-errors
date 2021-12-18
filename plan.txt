@@ -33,5 +33,15 @@ for each trial (each data set is filled with sequential numbers (1 tru size of d
  //find time difference for both and add it to an array that is composed
  //of data from each trial in a set
 
+
 -Then we will find the average for each set for both binary and linear.
 And then analyze the results.
+
+
+
+
+
+
+
+
+
