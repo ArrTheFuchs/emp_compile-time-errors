@@ -3,3 +3,5 @@ As A Trio: worked on and finalized plan in plan.txt, also added/created all the 
 
 12/18
 srijal30: started work on creating helper methods. Created test for srijal30.
+
+
