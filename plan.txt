@@ -28,7 +28,9 @@ Structure:
 6. print out our data (result of each trial and average)
 
 
-
+NOT SURE:
+should we add best case scenario and worst case scenario. Also what 
+is the average case.
 
 
 
