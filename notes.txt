@@ -1,0 +1,8 @@
+compile-time-errors: Salaj Rijal, Ariel Fuchs, Michael Kamela
+APCS
+lab03 -- BinarySearch vs LinearSearch
+2021-12-20
+
+DISCO:
+
+QCC:
