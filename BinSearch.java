@@ -1,5 +1,3 @@
-//FROM CLOSET
-
 /**
    class BinSearch
    Binary search on array of Comparables

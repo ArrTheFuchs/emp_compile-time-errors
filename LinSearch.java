@@ -1,5 +1,3 @@
-//FROM CLOSET
-
 /**
    class LinSearch
 **/

@@ -5,37 +5,27 @@ Dependent Variable: time taken
 
 Outline:
 
--Have 3 sets of tests, for data set of sizes 10, 1000, 10000. (10 will
-be michael 1000 will be salaj and 10000 will be ariel).
+-Have 3 sets of tests, for data set of sizes 500,0000; 5,000,0000, 50,000,000. The dataSets will be named
+mkamela, srijal and afuchs respectively. They will be populated with integers from 0 - sizeOfDataSet.
 
--For each set of testing, we will do 10* trials. We will do this by using
-2 nested for loops, one for each trial, one to generate the new data set
-for each trial (each data set is filled with sequential numbers (1 tru size of data set)
+-For each data set we will conduct 10* trials. In each trial we will generate a random number from the data sets
+that will become the target of the search. We will then measure the time it takes to do a binary search, and the time it takes
+to do a linear search. There will be 2 double arrays for each data set that will contain the results of each trial.
+The only controllable enviormental variables that should vary are the search algorithms themselves.
 
--Each trial will have the following structure:
+-After the testing we will display the results of our experiment.
 
- //Generate Data set
+Structure:
 
- //Select number to be searched for
+1. create mkamela dataset
+2. create 2 double arrays of size 10 which will contain the results of each trial
+3. create a for-loop that runs 10 times. Inside the for-loop we:
+    a. generate target
+    b. conduct linear search and add time taken to linData
+    c. conduct binary search and add time taken to binData
 
- //Find start time for binary test
-
- //Do binary test
-
- //Find end time for binary test
-
- //Find start time for linear test
-
- //Do linear test
-
- //Find end time for linear test
-
- //find time difference for both and add it to an array that is composed
- //of data from each trial in a set
-
-
--Then we will find the average for each set for both binary and linear.
-And then analyze the results.
+4. repeat steps 1-3, but for the other datasets (srijal and afuchs)
+6. print out our data (result of each trial and average)
 
 
 

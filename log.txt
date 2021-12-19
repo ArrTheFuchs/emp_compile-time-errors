@@ -1,3 +1,5 @@
 12/16:
-As A Trio: worked on and finalized plan in plan.txt
+As A Trio: worked on and finalized plan in plan.txt, also added/created all the necassary files for this lab
 
+12/18
+srijal30: started work on creating helper methods. Created test for srijal30.
