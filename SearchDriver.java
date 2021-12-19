@@ -49,9 +49,19 @@ public class SearchDriver{
     Size: 1,000,000
     */
 
+    Integer[] mkamela = makeArray(1000000);
+    double[] linData0 = new double[trialNum], binData0 = new double[trialNum];
 
-    //TO BE ADDED
+    for( int i = 0; i < trialNum; i++){
+      //generate target
+      Integer target = (int) (Math.random() * mkamela.length);
 
+      //Linear Search
+      linData0[i] = linTrial(mkamela, target);
+
+      //Binary Search
+      binData0[i] = binTrial(mkamela, target);
+    }
 
     /*
     DataSet 1
@@ -78,19 +88,36 @@ public class SearchDriver{
     Name: afuchs
     Size: 50,000,000
     */
-    
 
-    //TO BE ADDED
 
-    
+    Integer[] afuchs = makeArray(50000000);
+    double[] linData2 = new double[trialNum], binData2 = new double[trialNum];
+
+    for( int i = 0; i < trialNum; i++){
+      //generate target
+      Integer target = (int) (Math.random() * afuchs.length);
+
+      //Linear Search
+      linData2[i] = linTrial(afuchs, target);
+
+      //Binary Search
+      binData2[i] = binTrial(afuchs, target);
+    }
+
+
     //Printing of the Results
     String sep = "-------------------------------------------";
     System.out.println();
 
     //mkamela results
-
+    System.out.println("Results for mkamela (1,000,000): \n");
+    System.out.println("Linear Search: \n");
+    printTrials( linData0 );
+    System.out.println("Binary Search: \n");
+    printTrials( binData0 );
+    System.out.println(sep);
     //srijal results
-    System.out.println("Results for srijal30 (10,000,000): \n");
+    System.out.println("Results for srijal (10,000,000): \n");
     System.out.println("Linear Search: \n");
     printTrials( linData1 );
     System.out.println("Binary Search: \n");
@@ -98,6 +125,12 @@ public class SearchDriver{
     System.out.println(sep);
 
     //afuchs results
-
-  } 
+    System.out.println("Results for afuchs (50,000,000): \n");
+    System.out.println("Linear Search: \n");
+    printTrials( linData2 );
+    System.out.println("Binary Search: \n");
+    printTrials( binData2 );
+    System.out.println(sep);
+  }
 }
+
