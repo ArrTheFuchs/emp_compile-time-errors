@@ -90,7 +90,7 @@ public class SearchDriver{
     //mkamela results
 
     //srijal results
-    System.out.println("Results for srijal30 (5,000,000): \n");
+    System.out.println("Results for srijal30 (10,000,000): \n");
     System.out.println("Linear Search: \n");
     printTrials( linData1 );
     System.out.println("Binary Search: \n");

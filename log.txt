@@ -1,7 +1,8 @@
 12/16:
+afuchs30: created the repo
 As A Trio: worked on and finalized plan in plan.txt, also added/created all the necassary files for this lab
 
 12/18
 srijal30: started work on creating helper methods. Created test for srijal30.
-
+srijal30: fixed a typo
 
