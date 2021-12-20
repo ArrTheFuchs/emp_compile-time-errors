@@ -29,11 +29,5 @@ Structure:
 
 
 NOT SURE:
-should we add best case scenario and worst case scenario. Also what 
+should we add best case scenario and worst case scenario. Also what
 is the average case.
-
-
-
-
-
-
