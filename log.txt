@@ -6,3 +6,8 @@ As A Trio: worked on and finalized plan in plan.txt, also added/created all the 
 srijal30: started work on creating helper methods. Created test for srijal30.
 srijal30: fixed a typo
 
+12/19
+afuchs30: started README, finished SearchDriver.java
+
+12/20
+mkamela20: 

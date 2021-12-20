@@ -43,7 +43,7 @@ public class SearchDriver{
   }
 
   public static void main(String[] args) {
-    int trialNum = 10; //so we can change if we want
+    int trialNum = 100; //so we can change if we want
     /*
     DataSet 0
     Name: mkamela
@@ -134,4 +134,3 @@ public class SearchDriver{
     System.out.println(sep);
   }
 }
-
