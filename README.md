@@ -6,4 +6,4 @@ The linear search takes on average several milliseconds to complete. The binary 
 ## Conclusions
 Relative to the size of the dataset, performing a binary search is significantly faster than performing a linear search.
 ## Tests Performed
-We performed 10 trials of linear and binary searches on arrays of size 1 M, 10 M, and 50 M. 
+We performed 10 trials of linear and binary searches on arrays of size 1 M, 10 M, and 50 M. The binary search is completed much faster, to the point that for most data sets measuring milliseconds does not yield significant results. To counteract this, we used a while loop that kept on repeating binary search until the result became significant, and then multiplied how many iterations it took to the result of the linear search.
