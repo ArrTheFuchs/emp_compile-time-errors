@@ -59,7 +59,7 @@ public class SearchDriver{
   }
 
   public static void main(String[] args) {
-    int trialNum = 10; //easily modified
+    int trialNum = 100; //easily modified
 
     /*
     DataSet 0
