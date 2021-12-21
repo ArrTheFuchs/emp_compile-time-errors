@@ -26,6 +26,23 @@ public class SearchDriver{
     return end-start;
   }
 
+  //conduct both a linSearch and binSearch trial, and keep on doing this until binSearch becomes significant
+  public static double[] linBinTrial( Integer[] dataset, Integer target){
+    double[] result = new double[2]; //index 0 is lin trial result, index 1 is bin trial result
+    int iterations = 0;
+    double binTrialSum = 0.0;
+
+    while( binTrialSum == 0 ){
+      binTrialSum += binTrial(dataset, target);
+      iterations++;
+    }
+
+    result[0] = linTrial(dataset, target) * iterations;
+    result[1] = binTrialSum;
+
+    return result;
+  }
+
   //helper method for printing trials
   public static void printTrials( double[] results ){
     //header
@@ -36,32 +53,34 @@ public class SearchDriver{
       System.out.println(i + ":\t" + results[i]);
       avg += results[i];
     }
-
     //print average
     avg /= results.length;
     System.out.println("AVG:\t" + avg + "\n");
   }
 
   public static void main(String[] args) {
-    int trialNum = 100; //so we can change if we want
+    int trialNum = 10; //easily modified
+
     /*
     DataSet 0
     Name: mkamela
     Size: 1,000,000
     */
-
-    Integer[] mkamela = makeArray(1000000);
+    Integer[] mkamela = makeArray(1_000_000);
     double[] linData0 = new double[trialNum], binData0 = new double[trialNum];
 
     for( int i = 0; i < trialNum; i++){
       //generate target
       Integer target = (int) (Math.random() * mkamela.length);
 
+      //Conduct Trial
+      double[] trialResult = linBinTrial(mkamela, target);
+
       //Linear Search
-      linData0[i] = linTrial(mkamela, target);
+      linData0[i] = trialResult[0];
 
       //Binary Search
-      binData0[i] = binTrial(mkamela, target);
+      binData0[i] = trialResult[1];
     }
 
     /*
@@ -69,19 +88,21 @@ public class SearchDriver{
     Name: srijal
     Size: 10,000,000
     */
-
-    Integer[] srijal = makeArray(10000000);
+    Integer[] srijal = makeArray(10_000_000);
     double[] linData1 = new double[trialNum], binData1 = new double[trialNum];
 
     for( int i = 0; i < trialNum; i++){
       //generate target
       Integer target = (int) (Math.random() * srijal.length);
 
+      //Conduct Trial
+      double[] trialResult = linBinTrial(srijal, target);
+
       //Linear Search
-      linData1[i] = linTrial(srijal, target);
+      linData1[i] = trialResult[0];
 
       //Binary Search
-      binData1[i] = binTrial(srijal, target);
+      binData1[i] = trialResult[1];
     }
 
     /*
@@ -89,20 +110,21 @@ public class SearchDriver{
     Name: afuchs
     Size: 50,000,000
     */
-
-
-    Integer[] afuchs = makeArray(50000000);
+    Integer[] afuchs = makeArray(50_000_000);
     double[] linData2 = new double[trialNum], binData2 = new double[trialNum];
 
     for( int i = 0; i < trialNum; i++){
       //generate target
       Integer target = (int) (Math.random() * afuchs.length);
 
+      //Conduct Trial
+      double[] trialResult = linBinTrial(afuchs, target);
+
       //Linear Search
-      linData2[i] = linTrial(afuchs, target);
+      linData2[i] = trialResult[0];
 
       //Binary Search
-      binData2[i] = binTrial(afuchs, target);
+      binData2[i] = trialResult[1];
     }
 
 

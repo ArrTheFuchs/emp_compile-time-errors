@@ -1,6 +1,6 @@
 12/16:
 afuchs30: created the repo
-As A Trio: worked on and finalized plan in plan.txt, also added/created all the necassary files for this lab
+As A Trio: worked on and finalized plan in plan.txt, also added/created all the necessary files for this lab
 
 12/18
 srijal30: started work on creating helper methods. Created test for srijal30.
@@ -10,4 +10,8 @@ srijal30: fixed a typo
 afuchs30: started README, finished SearchDriver.java
 
 12/20
-mkamela20: posted piazza post, tweaked SearchDriver.java to follow piazza advice, finished README
+in-class:
+mkamela20: posted piazza post, tweaked SearchDriver.java to follow piazza advice, updated README
+
+at-home:
+mkamela20: changed SearchDriver.java to reflect in-class recommendations made by Mr. Mykolyk, finalized README
