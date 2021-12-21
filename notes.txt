@@ -4,7 +4,11 @@ lab03 -- BinarySearch vs LinearSearch
 2021-12-20
 
 DISCO:
--
+- BinarySearch is significantly faster than LinearSearch. We can visualize this by graphing y=x and y=log_2(x). 
+- Since BinarySearch is so efficient, we need to repeat a search in a trial until it becomes significant. 
+- The WORST case for both BinarySearch and LinearSearch is the target not being present in the array.
 
 QCC:
-- Why do we need to use -XLint:unchecked
+- Why do we need to use -XLint:unchecked?
+- Is the way we implemented repeition of a trial valid and scientific?
+- Is random target generating really the way to go?

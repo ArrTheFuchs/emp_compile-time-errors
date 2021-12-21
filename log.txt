@@ -10,4 +10,4 @@ srijal30: fixed a typo
 afuchs30: started README, finished SearchDriver.java
 
 12/20
-mkamela20: 
+mkamela20: posted piazza post, tweaked SearchDriver.java to follow piazza advice, finished README
