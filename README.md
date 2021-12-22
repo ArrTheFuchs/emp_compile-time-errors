@@ -2,7 +2,7 @@
 Salaj Rijal, Michael Kamela, Ariel Fuchs
 
 ## Tests Performed
-We tested 10 trials for 3 data sets (of sizes 5M, 25M and 50M) and 1 trail for the worst possible case. For each trial we generated a random target and measured the time it would take for search to find said target in the array. In order to make sure that binary search yielded a significant result, we performed the binary search multiple times until the time taken became significant. Then, in order to maintain integrity of the result, we multiplied the linear search result by how many times we performed the binary search.
+We tested 10 trials for 3 data sets (of sizes 5M, 25M and 50M) and 1 trail for the worst possible case. For each trial we generated a random target and measured the time it would take for search to find said target in the array. In order to make sure that binary search yielded a significant result (since it often yielded 0.0), we performed the binary search multiple times until the time taken became significant. Then, in order to maintain integrity of the result, we multiplied the linear search result by how many times we performed the binary search. (However we never really got around to perfecting this part of the experiment so the results may seem a bit scuffed)
 
 ## Results
 According to our results, binary search takes significantly less time to find a target in an array than linear search on average for all the data sets. In some peculiar test cases, however,
