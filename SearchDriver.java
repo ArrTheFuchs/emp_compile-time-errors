@@ -19,6 +19,7 @@ public class SearchDriver{
       end = System.currentTimeMillis();
       multiplier++;
     }
+    System.out.println(multiplier);
     return (end-start);
   }
 

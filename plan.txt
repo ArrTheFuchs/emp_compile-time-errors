@@ -20,9 +20,8 @@ Structure:
 1. create mkamela dataset
 2. create 2 double arrays of size 10 which will contain the results of each trial, and one Integer array that will contain the target
 3. create a for-loop that runs 10 times. Inside the for-loop we:
-    a. generate target and add to targetArray
-    b. conduct linear search and add time taken to linData
-    c. conduct binary search and add time taken to binData
+    a. generate target
+    b. run tests using helper method
 4. test worst case for array
 
 4. repeat steps 1-3, but for the other datasets (srijal and afuchs)
