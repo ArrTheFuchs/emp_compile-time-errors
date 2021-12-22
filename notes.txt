@@ -15,3 +15,14 @@ QCC:
 - Is the way we implemented repeition of a trial valid and scientific?
 - Is random target generating really the way to go?
 - Why is our data printing so weirdly?
+
+GALLERY TOUR:
+-In our report with team PUNTY, we learned that we could multiply
+our data to make it significant, however for some reason this did not 
+work for us. Also we learned how enviormental variables such as the computer
+being used had a big impact on the results.
+
+-In our meeting with team Java Coffee, we learned the importance
+of displaying our data correctly.
+
+-In our meeting with pserbco we learned that we should test the worst case.

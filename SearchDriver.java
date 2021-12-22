@@ -19,7 +19,6 @@ public class SearchDriver{
       end = System.currentTimeMillis();
       multiplier++;
     }
-    System.out.println(multiplier);
     return (end-start);
   }
 
@@ -28,15 +27,14 @@ public class SearchDriver{
     double start = System.currentTimeMillis();
     LinSearch.linSearch(dataset, target);
     double end = System.currentTimeMillis();
-    return (end-start);
+    return (end-start)*multiplier;
   }
 
   //helper method for printing trials
   public static double[] printTrial( Integer[] dataset, Integer target ){
     double binTrial = binTrial(dataset, target);
-    double linTrial = linTrial(dataset, target) * multiplier;
-    System.out.println("\t" + binTrial + "\t" + linTrial + "\t\t" + target );
-
+    double linTrial = linTrial(dataset, target);
+    System.out.println( "\t" + binTrial + "\t" + linTrial + "\t\t" + target );
     return new double[]{linTrial, binTrial}; //0: lintrial, 1: bintrial
   }
 
@@ -62,8 +60,8 @@ public class SearchDriver{
     Name: mkamela
     Size: 1,000,000
     */
-    System.out.println("\n1,000,000 DATA:\n");
-    Integer[] mkamela = makeArray(1_000_000);
+    System.out.println("\n5,000,000 DATA:\n");
+    Integer[] mkamela = makeArray(5_000_000);
 
     //header
     System.out.println("Trial:\tBin:\tLin:\t\tTarget:");
@@ -88,8 +86,8 @@ public class SearchDriver{
     Name: srijal
     Size: 10,000,000
     */
-    System.out.println("\n10,000,000 DATA:\n");
-    Integer[] srijal = makeArray(10_000_000);
+    System.out.println("\n25,000,000 DATA:\n");
+    Integer[] srijal = makeArray(25_000_000);
 
     //header
     System.out.println("Trial:\tBin:\tLin:\t\tTarget:");

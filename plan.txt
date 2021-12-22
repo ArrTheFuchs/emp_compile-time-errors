@@ -5,7 +5,7 @@ Dependent Variable: time taken
 
 Outline:
 
--Have 3 sets of tests, for data set of sizes 1,000,0000; 10,000,0000, 50,000,000. The dataSets will be named
+-Have 3 sets of tests, for data set of sizes 5,000,0000; 25,000,0000, 50,000,000. The dataSets will be named
 mkamela, srijal and afuchs respectively. They will be populated with integers from 0 - sizeOfDataSet.
 
 -For each data set we will conduct 10* trials. In each trial we will generate a random number from the data sets
