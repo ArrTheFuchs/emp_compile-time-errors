@@ -4,7 +4,6 @@ As A Trio: worked on and finalized plan in plan.txt, also added/created all the 
 
 12/18
 srijal30: started work on creating helper methods. Created test for srijal30.
-srijal30: fixed a typo
 
 12/19
 afuchs30: started README, finished SearchDriver.java
@@ -12,6 +11,9 @@ afuchs30: started README, finished SearchDriver.java
 12/20
 in-class:
 mkamela20: posted piazza post, tweaked SearchDriver.java to follow piazza advice, updated README
-
 at-home:
 mkamela20: changed SearchDriver.java to reflect in-class recommendations made by Mr. Mykolyk, finalized README
+
+12/21:
+srijal30: edited README to incorparate ideas from gallery walk. Also grammar checked. Changed SearchDriver.java to 
+incorparate ideas from gallery walk. Also edited Plan and Notes slightly.

@@ -10,7 +10,7 @@ mkamela, srijal and afuchs respectively. They will be populated with integers fr
 
 -For each data set we will conduct 10* trials. In each trial we will generate a random number from the data sets
 that will become the target of the search. We will then measure the time it takes to do a binary search, and the time it takes
-to do a linear search. There will be 2 double arrays for each data set that will contain the results of each trial.
+to do a linear search. We will then test worst case as well. There will be 2 double arrays for each data set that will contain the results of each trial.
 The only controllable enviormental variables that should vary are the search algorithms themselves.
 
 -After the testing we will display the results of our experiment.
@@ -18,16 +18,14 @@ The only controllable enviormental variables that should vary are the search alg
 Structure:
 
 1. create mkamela dataset
-2. create 2 double arrays of size 10 which will contain the results of each trial
+2. create 2 double arrays of size 10 which will contain the results of each trial, and one Integer array that will contain the target
 3. create a for-loop that runs 10 times. Inside the for-loop we:
-    a. generate target
+    a. generate target and add to targetArray
     b. conduct linear search and add time taken to linData
     c. conduct binary search and add time taken to binData
+4. test worst case for array
 
 4. repeat steps 1-3, but for the other datasets (srijal and afuchs)
 6. print out our data (result of each trial and average)
 
 
-NOT SURE:
-should we add best case scenario and worst case scenario. Also what
-is the average case.
