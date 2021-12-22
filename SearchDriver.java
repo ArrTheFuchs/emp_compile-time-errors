@@ -10,9 +10,9 @@ public class SearchDriver{
   }
 
   //conduct a binSearch trial and return time taken
-  public static double binTrial( Integer[] dataset, Integer target){
-    double start = System.currentTimeMillis();
-    double end = 0;
+  public static long binTrial( Integer[] dataset, Integer target){
+    long start = System.currentTimeMillis();
+    long end = 0;
     multiplier = 1;
     while( end-start < 1 ){
       BinSearch.binSearch(dataset, target);
@@ -23,24 +23,24 @@ public class SearchDriver{
   }
 
   //conduct a linSearch trial and return time taken
-  public static double linTrial( Integer[] dataset, Integer target){
-    double start = System.currentTimeMillis();
+  public static long linTrial( Integer[] dataset, Integer target){
+    long start = System.currentTimeMillis();
     LinSearch.linSearch(dataset, target);
-    double end = System.currentTimeMillis();
+    long end = System.currentTimeMillis();
     return (end-start)*multiplier;
   }
 
   //helper method for printing trials
-  public static double[] printTrial( Integer[] dataset, Integer target ){
-    double binTrial = binTrial(dataset, target);
-    double linTrial = linTrial(dataset, target);
+  public static long[] printTrial( Integer[] dataset, Integer target ){
+    long binTrial = binTrial(dataset, target);
+    long linTrial = linTrial(dataset, target);
     System.out.println( "\t" + binTrial + "\t" + linTrial + "\t\t" + target );
-    return new double[]{linTrial, binTrial}; //0: lintrial, 1: bintrial
+    return new long[]{linTrial, binTrial}; //0: lintrial, 1: bintrial
   }
 
-  public static double average( double[] data ){
-    double sum = 0;
-    for( double val: data){
+  public static long average( long[] data ){
+    long sum = 0;
+    for( long val: data){
       sum += val;
     }
     return sum/data.length;
@@ -48,7 +48,7 @@ public class SearchDriver{
 
   public static void main(String[] args) {
     int trialNum = 10; //10 trials for now but can be changed
-    double[] linData = new double[trialNum], binData = new double[trialNum];
+    long[] linData = new long[trialNum], binData = new long[trialNum];
 
     //RANDOM FIRST TEST TO COUNTERACT FIRST TEST MESS UP
     Integer[] random = makeArray(100000);
@@ -70,7 +70,7 @@ public class SearchDriver{
       Integer target = (int) (Math.random() * mkamela.length);
       //conduct and print trial
       System.out.print(i);
-      double result[] = printTrial(mkamela, target);
+      long result[] = printTrial(mkamela, target);
       linData[i] = result[0];
       binData[i] = result[1];
     }
@@ -96,7 +96,7 @@ public class SearchDriver{
       Integer target = (int) (Math.random() * srijal.length);
       //conduct and print trial
       System.out.print(i);
-      double result[] = printTrial(srijal, target);
+      long result[] = printTrial(srijal, target);
       linData[i] = result[0];
       binData[i] = result[1];
     }
@@ -122,7 +122,7 @@ public class SearchDriver{
       Integer target = (int) (Math.random() * afuchs.length);
       //conduct and print trial
       System.out.print(i);
-      double result[] = printTrial(afuchs, target);
+      long result[] = printTrial(afuchs, target);
       linData[i] = result[0];
       binData[i] = result[1];
     }
